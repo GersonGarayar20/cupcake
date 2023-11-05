@@ -1,0 +1,43 @@
+---
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+import Redes from "../components/Redes.astro";
+interface Props {
+  title: string;
+}
+
+import "@fontsource-variable/dancing-script";
+import "@fontsource/poppins";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="logo2.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <!-- <Redes /> -->
+    <Nav />
+    <main class="max-w-7xl mx-auto min-h-screen px-8">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+<style is:global>
+  body {
+    background-color: rgb(254 228 231);
+    font-family: "Poppins", sans-serif;
+  }
+  h1,
+  h2 {
+    font-family: "Dancing Script Variable", sans-serif;
+  }
+</style>
