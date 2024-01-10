@@ -1,4 +1,4 @@
-<nav>
+<nav class="w-full transition-all">
   <ul class="flex justify-center gap-2">
     <li><a class="block p-4" href="/">Home</a></li>
     <li><a class="block p-4" href="/products">Productos</a></li>
@@ -6,6 +6,21 @@
     <li><a class="block p-4" href="/contact">Contacto</a></li>
   </ul>
 </nav>
+
+<!-- <script>
+  var prevScrollPos = window.pageYOffset;
+  var navbar = document.getElementById("navbar");
+
+  window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        navbar.style.top = "0";
+      } else {
+          navbar.style.top = "-100%";
+      }
+      prevScrollPos = currentScrollPos;
+  }
+</script> -->
 
 <style>
   a {

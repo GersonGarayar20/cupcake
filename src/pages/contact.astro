@@ -3,13 +3,13 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contacto">
-  <h1 class="text-7xl text-rose-500 font-bold text-center py-16">Contacto</h1>
+  <h1 class="text-7xl text-stone-600 font-bold text-center py-16">Contacto</h1>
 
   <div class="flex justify-center">
     <form class="flex flex-col gap-4 w-96">
       <label for="nombre">Nombre:</label>
       <input
-        class="p-4 rounded-3xl focus:outline-rose-500"
+        class="p-4 rounded-3xl focus:outline-stone-600"
         type="text"
         id="nombre"
         name="nombre"
@@ -18,7 +18,7 @@ import Layout from "../layouts/Layout.astro";
 
       <label for="email">Correo Electrónico:</label>
       <input
-        class="p-4 rounded-3xl focus:outline-rose-500"
+        class="p-4 rounded-3xl focus:outline-stone-600"
         type="email"
         id="email"
         name="email"
@@ -27,14 +27,14 @@ import Layout from "../layouts/Layout.astro";
 
       <label for="mensaje">Mensaje:</label>
       <textarea
-        class="p-4 rounded-3xl focus:outline-rose-500"
+        class="p-4 rounded-3xl focus:outline-stone-600"
         id="mensaje"
         name="mensaje"
         rows="4"
         required></textarea>
 
       <input
-        class="bg-rose-500 text-white p-4 rounded-3xl hover:bg-rose-600 cursor-pointer"
+        class="bg-stone-500 text-white p-4 rounded-3xl hover:bg-stone-600 cursor-pointer"
         type="submit"
         value="Enviar"
       />
